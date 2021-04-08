@@ -1,55 +1,50 @@
-*{
-    padding:0px;
+* {
+    padding: 0px;
     margin: 0px;
 }
 
-.header-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #000;
+.animation {
+    background-image: url('../images/3.webp'), url('../images/1.jpg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, repeat;
 }
-.header-section .logo{}
-.header-section .logo img{}
-.header-section .menu{}
-.header-section .menu nav{}
-.header-section .menu nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
+
+
+.border {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    opacity:0.5;
+    border-radius: 20px 100px 50px 200px;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../images/border.png') 30 round;
 }
-.header-section .menu nav ul li{
-   text-align: center;
+
+
+.shadow{
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+   background-image: radial-gradient( blue, red);
+    box-shadow: 5px 10px 20px red;
 }
-.header-section .menu nav ul li a{
-    display: inline-block;
+
+.shadow h1{
+    text-shadow: 2px 2px red;
+}
+
+
+.animation2{
     width: 200px;
-    padding: 30px 0px;
-    text-decoration: none;
-    color: #fff;
-    border-left:2px solid #2c2c2c;
-}
-.header-section .menu nav ul li a:hover{
-    color: red;
+    height: 200px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 
-
-.blog-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.blog-section .post{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.blog-section .post .post-item{
-    width: 350px;
-    margin: 0px 10px;
-}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
