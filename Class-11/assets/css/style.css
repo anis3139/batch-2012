@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.parent{
+    position: relative;
+}
+.animation{
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    animation-name: test;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+    /* animation-delay: 5s; */
+    animation-direction: alternate-reverse;
+    position: absolute;
+}
+
+
+@keyframes test{
+    0%{top:0px; left: 0px; background-color: #f00;}
+    25%{top: 0px; left: 500px; background-color: #ff0;}
+    50%{top: 500px; left: 500px; background-color: green;}
+    75%{top: 500px; left: 0px; background-color: blue;}
+    100%{top: 0px; left: 0px; background-color: #f00;}
+}
